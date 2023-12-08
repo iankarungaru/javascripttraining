@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Introduce a function checkyear to check if its a leap year
+      function checkYear(year) {
+        // Check if the year is divisible by 4
+        if (year % 4 === 0) {
+          // If it's divisible by 100, it should also be divisible by 400 to be a leap year
+          if (year % 100 === 0) {
+            return year % 400 === 0;
+          }
+          return true;
+        }
+        return false;
+      }
+
+      // Main function
+      function main() {
+        const year = prompt("Enter a random year");
+
+        if (checkYear(year)) {
+          console.log("Leap Year");
+        } else {
+          console.log("Not a Leap Year");
+        }
+      }
+
+      // Run the main function
+      main();
+    </script>
+  </body>
+</html>
