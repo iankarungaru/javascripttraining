@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let source_array = [
+        20,
+        "john",
+        23,
+        "kevin",
+        "amapiano",
+        "rhumba",
+        80,
+        "pop",
+        "peach",
+        870,
+      ];
+      extracted_array = source_array.slice(2, 5);
+      console.log(extracted_array);
+      extracted_array.splice(0, 1, "x");
+      extracted_array.splice(1, 2, "y");
+      extracted_array.splice(-1, 0, "z");
+      console.log(extracted_array);
+    </script>
+  </body>
+</html>
